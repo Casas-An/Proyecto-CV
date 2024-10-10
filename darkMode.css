@@ -303,7 +303,8 @@ ul {
     line-height: 1.2;
 }
 
-.imgWhite {
+.imgBlack {
+	filter: invert(100%);
 	display: grid;
 }
 

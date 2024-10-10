@@ -295,6 +295,7 @@ ul {
 .imgWhite {
 	filter: invert(100%);
 	display: grid;
+	margin: 0 0 10px 0;
 }
 
 .logos {
