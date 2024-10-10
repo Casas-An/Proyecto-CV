@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>CV Casas Anahi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.0/themify-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="PáginaPrincipal">
+
+        <div class="contenedorIzquierdo">
+            <div class="contenedorSecundario">
+                <img id="fotoCV" src="/Users/anahicasas/Library/Mobile Documents/com~apple~CloudDocs/Curriculum CV.jpg"
+                    alt="Foto CV Casás Anahí" title="Foto CV Casás Anahí">
+            </div>
+        </div>
+
+        <div class="contenedorDerecho">
+            <div class="modeAndLanguage">
+                <img class="moon" src="https://media-public.canva.com/Xvnlk/MAEykuXvnlk/1/tl.png" alt="darkMode"
+                    onclick="toggleMode()" style="width: 31px; height: 31px; cursor: pointer;">
+                <img src="https://static.grabjobs.co/img/country_flags/spain.svg" alt="Español"
+                    style="width: 30px; cursor: pointer;">
+                <img src="https://static.grabjobs.co/img/country_flags/uk.svg" alt="English"
+                    style="width: 30px; cursor: pointer; margin: 0 20px 0 0;">
+            </div>
+            <div class="presentación">
+                <p style="align-self: self-end; font-size: 25px;">
+                    Hola, soy </p>
+                <h1 class="name">Anahí Casás</h1>
+                <p style="align-self: self-start; font-size: 18px;">Bienvenido mi CV interactivo!</p>
+
+                <div style="align-self: start;">
+                    <button class="buttonsPrincipalPage" style="background-color: #0e76a8; box-shadow: inset 17px -17px 41px #0a5579,
+            inset -17px 17px 41px #1297d7; border: solid #0e76a8;">
+                        <a style="color: white;" href="https://www.linkedin.com/in/casasanahi"
+                            target="_blank">LinkedIn</a>
+                    </button>
+                    <button class="buttonsPrincipalPage">
+                        <a href="#PáginaDesarrollada" target="_self">Conóceme</a>
+                    </button>
+                    <button class="buttonsPrincipalPage">
+                        <a href="#ContactAndReview" target="_self">Contáctame</a>
+                    </button>
+                </div>
+
+                <p style="color: #878787; font-size: 18px; font-weight: 400; margin: 0;">
+                    Este es mi primer proyecto web, y aquí te enseño todo lo que he aprendido durante mis estudios como
+                    Desarrollador FullStack.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="PáginaDesarrollada">
+
+        <div class="aboutMe">
+            <h4 class="titles">SOBRE MI</h4>
+            <p style="margin: 20px 0 0 0;">
+                Analista con amplia experiencia en análisis de datos, elaboración de informes y recomendaciones
+                estratégicas.<br>
+                Experta en identificar tendencias, oportunidades de mejora y en la implementación de soluciones
+                efectivas.<br>
+                Conocimientos básicos en el área de TI con habilidad para manejar varios sistemas relacionados.
+            </p>
+        </div>
+
+        <div class="edLanSk">
+
+            <div class="education firstBoxes" onclick="openBox(this)">
+                <h4 class="titleMin">EDUCACIÓN</h4>
+                <ul>
+                    <li class="liNoLi">Licenciatura en Administración de Empresas</li>
+                    <p class="detail">Martillero Público y Corredor de Comercio <br>
+                        UNSAM, Buenos Aires, Argentina</p>
+                    <li class="liNoLi">Curso: Full Stack Developer</li>
+                    <p class="detail">Tech Academy<br>
+                        Remoto</p>
+                </ul>
+            </div>
+
+            <div class="languages firstBoxes" onclick="openBox(this)">
+                <h4 class="titleMin">IDIOMAS</h4>
+                <ul>
+                    <li class="liNoLi">Español</li>
+                    <p class="detail">Nativo</p>
+                    <li class="liNoLi">Inglés</li>
+                    <p class="detail">Avanzado</p>
+                    <li class="liNoLi">Sueco</li>
+                    <p class="detail">Básico (aprendiendo)</p>
+                </ul>
+            </div>
+
+            <div class="skills firstBoxes" onclick="openBox(this)">
+                <h4 class="titleMin">HABILIDADES BLANDAS</h4>
+                <ul>
+                    <li class="liS">Proactividad y auto-motivación</li>
+                    <li class="liS">Pensamiento crítico y analítico</li>
+                    <li class="liS">Trabajo en equipo</li>
+                    <li class="liS">Planeación estratégica</li>
+                    <li class="liS">Organización</li>
+                    <li class="liS">Gestión de reportes, indicadores y KPIs
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="professionalExperience">
+            <h4 class="titles">EXPERIENCIA PROFESIONAL</h4>
+            <ol class="ol">
+                <li class="experience">
+                    <span class="imgCalendar">
+                        <svg class="detailsImgCalendar" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                    </span>
+                    <h3 class="nameExperience" style="display: flex; align-items: center;">Auxiliar administrativo
+                        bancario
+                        <span class="lastJob">Mas reciente</span>
+                    </h3>
+                    <time class="datePosition">Oct 2023 - Dic 2023</time>
+                    <p class="descriptionPosition" style="margin-bottom: 1rem">
+                    <ul>
+                        <li class="tasks">Resolver consultas, quejas, reclamos y proporcionar información.</li>
+                        <li class="tasks">Responsable de transacciones financieras de caja, arqueos y conciliaciones de
+                            caja al final del día, gestión de liquidez de la sucursal, caja fuerte, cajero automático y
+                            caja manual. </li>
+                        <li class="tasks">Mantener protocolos de seguridad según las políticas de la empresa.</li>
+                    </ul>
+                    </p>
+                </li>
+                <li class="experience">
+                    <span class="imgCalendar">
+                        <svg class="detailsImgCalendar" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                    </span>
+                    <h3 class="nameExperience">Responsable del desarrollo de negocio</h3>
+                    <time class="datePosition">Sep 2022 - May 2023</time>
+                    <p class="descriptionPosition">
+                    <ul>
+                        <li class="tasks">Lideré la expansión de la red nacional, logrando un incremento del 13.33%.
+                        </li>
+                        <li class="tasks">Tomé los requisitos funcionales de los clientes y los reporté a los
+                            desarrolladores. </li>
+                        <li class="tasks">Implementé mejoras en procesos y automatización en portales de gestión,
+                            optimizando la gestión del control de stock, procesos operativos y la trazabilidad en la
+                            cadena de suministro.</li>
+                        <li class="tasks">Creación y seguimiento de KPIs para la medición del rendimiento, incluyendo
+                            SLA en DO y PU.</li>
+                        <li class="tasks">Coordiné el equipo comercial, capacitación, facturación y back office.</li>
+                    </ul>
+                    </p>
+                </li>
+                <li class="experience">
+                    <span class="imgCalendar">
+                        <svg class="detailsImgCalendar" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                        </svg>
+                    </span>
+                    <h3 class="nameExperience">Analista de prevención de fraude y extravíos</h3>
+                    <time class="datePosition">Sep 2020 - Sep 2022</time>
+                    <p class="descriptionPosition">
+                    <ul>
+                        <li class="tasks">Analicé datos para detectar patrones y tendencias, reduciendo un 70% los
+                            incidentes de fraude y extravíos.</li>
+                        <li class="tasks">Gestioné reclamos e incidencias utilizando herramientas de ticketing,
+                            escalando problemas al área de IT.</li>
+                        <li class="tasks">Creé informes y KPIs de control de calidad, optimizando los procesos de
+                            gestión de inventarios y monitoreo de stock, logrando cumplir métricas por debajo del target
+                            de LATAM. </li>
+                        <li class="tasks">Implementé políticas de gestión de proveedores y auditoría de procesos,
+                            mejorando la trazabilidad y reduciendo el impacto financiero de las pérdidas.</li>
+                    </ul>
+                    </p>
+                </li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div id="portfolio">
+        <h3 class="titlePortfolio titles">MIS PROYECTOS</h3>
+        <div class="projects">
+            <div class="projectBox">
+                <img class="imgProjects" src="/Users/anahicasas/Desktop/logo proyecto CV.png" alt="Proyecto este CV">
+                <div class="tooltip">
+                    <h3>Este CV</h3>
+                    <span>HTML, CSS, JS</span>
+                </div>
+            </div>
+            <div class="projectBox">
+                <a href="file:///Users/anahicasas/Desktop/Proyecto%20AC%20Nails/index.html" target="_blank">
+                    <img class="imgProjects acNails" src="/Users/anahicasas/Desktop/Proyectos CV/Proyecto AC.png"
+                        alt="Proyecto AC Nails">
+                    <div class="tooltip">
+                        <h3>AC Nails</h3>
+                        <span>HTML, CSS, JS</span>
+                    </div>
+                </a>
+            </div>
+            <div class="projectBox">
+                <img class="imgProjects" src="/Users/anahicasas/Desktop/still learning.png" alt="Próximamente"
+                    style="height: 100%;">
+                <div class="tooltip">
+                    <h3>Estoy estudiando</h3>
+                    <span>React</span>
+                </div>
+            </div>
+            <div class="projectBox">
+                <img class="imgProjects" src="/Users/anahicasas/Desktop/still learning.png" alt="Próximamente"
+                    style="height: 100%;">
+                <div class="tooltip">
+                    <h3>Estoy estudiando</h3>
+                    <span>Angular</span>
+                </div>
+            </div>
+            <div class="projectBox">
+                <img class="imgProjects" src="/Users/anahicasas/Desktop/still learning.png" alt="Próximamente"
+                    style="height: 100%;">
+                <div class="tooltip">
+                    <h3>Estoy estudiando</h3>
+                    <span>Node.Js</span>
+                </div>
+            </div>
+            <div class="projectBox">
+                <img class="imgProjects" src="/Users/anahicasas/Desktop/still learning.png" alt="Próximamente"
+                    style="height: 100%;">
+                <div class="tooltip">
+                    <h3>Estoy estudiando</h3>
+                    <span>Java</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gridContainer">
+        <div class="leftDivGrid">
+            <h2 class="header">REDES SOCIALES</h2>
+            <a class="logos" href="https://www.linkedin.com/in/casasanahi" target="_blank">
+                <img class="imgWhite" style="width: 7vw;"
+                    src="https://media.canva.com/v2/image-resize/format:PNG/height:464/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2FW-plU%2FMAGS4nW-plU%2F1%2Fp.svg/watermark:F/width:550?csig=AAAAAAAAAAAAAAAAAAAAAASAZghtS7vola4i4jp9RpFWDDNjQnaUXvng2Pip3T7P&exp=1728314970&osig=AAAAAAAAAAAAAAAAAAAAACA4M8Xzstopyce5pDEklDRN_lBNes_V-40XFwyPTqat&signer=media-rpc&x-canva-quality=thumbnail_large">
+            </a>
+            <a class="logos" href="https://github.com/Casas-An" target="_blank">
+                <img class="imgWhite" style="width: 6vw;"
+                    src="https://media-private.canva.com/jVyxQ/MAGSz8jVyxQ/1/p.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20241006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241006T023819Z&X-Amz-Expires=63423&X-Amz-Signature=4b495c94de153a57cc577b11c75e5418d12024beb55d0290dada0ffce3400dce&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sun%2C%2006%20Oct%202024%2020%3A15%3A22%20GMT">
+            </a>
+            <img class="emoji" src="/Users/anahicasas/Desktop/Proyectos CV/memoji.png">
+        </div>
+
+        <div class="rightDivGrid">
+            <div class="topRightDivGrid">
+                <h2 class="header">HABILIDADES TÉCNICAS</h2>
+                <img class="logos" style="width: 5vw;"
+                    src="https://media.canva.com/v2/image-resize/format:PNG/height:550/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2F3z508%2FMAGS5L3z508%2F1%2Fp.svg/watermark:F/width:500?csig=AAAAAAAAAAAAAAAAAAAAAMeV8BS94qMi9xMnc-257GBiYjXNHnlWWgiKam7wLNmd&exp=1728322717&osig=AAAAAAAAAAAAAAAAAAAAAIxfCs1mVqGoRcaJ1SwdhimDPIwAY4OiZaXEQ5CWO8r0&signer=media-rpc&x-canva-quality=thumbnail_large"
+                    alt="Office365" title="Office365">
+                <img class="logos" style="width: 6vw;"
+                    src="https://media.canva.com/v2/image-resize/format:PNG/height:151/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2Fv_-fQ%2FMAGSz7v_-fQ%2F1%2Fp.svg/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAHVpMTRDVLtcAHvO3drU2iyWpgg_gBjTPjTcegv483p2&exp=1728245897&osig=AAAAAAAAAAAAAAAAAAAAAFQNVEcE5G70ueEN5xkfULDfa4H9MvBIJ5Y3t8hJ65RK&signer=media-rpc&x-canva-quality=thumbnail"
+                    alt="Zendesk" title="Zendesk">
+                <img class="logos" style="width: 9.5vw;"
+                    src="https://media.canva.com/v2/image-resize/format:PNG/height:98/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2Fv1uN4%2FMAGSz6v1uN4%2F1%2Fp.svg/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAJ5E8o1uJqov74dfivs8ONOkMEHTa6pc4bT5OE_4U3k6&exp=1728245183&osig=AAAAAAAAAAAAAAAAAAAAAOsuyKviD4V7CG9uElM4hHkZaUkOeHl91ZnyuHbIyVwr&signer=media-rpc&x-canva-quality=thumbnail"
+                    alt="SAP" title="SAP">
+                <img class="logos" style="width: 5.5vw;"
+                    src="https://media.canva.com/v2/image-resize/format:PNG/height:196/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2F-pN-M%2FMAGSz4-pN-M%2F1%2Fp.svg/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAIFLrdGtRzpeuqk_oNEAGZtk6OBoifO6LpUYigsh9H_F&exp=1728245557&osig=AAAAAAAAAAAAAAAAAAAAAFqi9Mnpsylw-Qjd5brJK4dA9OwXsiNtbQqu_x3mN63g&signer=media-rpc&x-canva-quality=thumbnail"
+                    alt="Tableau" title="Tableau">
+                <img class="logos" style="width: 5.5vw;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="PowerBI"
+                    title="PowerBI">
+                <img class="logos" style="width: 7vw;" src="https://cdn.worldvectorlogo.com/logos/postman.svg"
+                    alt="Postman" title="Postman">
+                <img class="logos" style="width: 7vw;"
+                    src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+                    alt="JavaScript" title="JavaScript">
+                <img class="logos" style="width: 7vw;"
+                    src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" alt="HTML5"
+                    title="HTML5">
+                <img class="logos" style="width: 7vw;" src="https://img.icons8.com/?size=512&id=21278&format=png"
+                    alt="CSS" title="CSS">
+                <img class="logos" style="width: 6vw;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" title="React">
+                <img class="logos" style="width: 7vw;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular"
+                    title="Angular">
+                <img class="logos" style="width: 5vw;"
+                    src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" alt="Node.Js"
+                    title="Node.Js">
+            </div>
+
+            <div class="bottomRightDivGrid">
+                <h2 class="header" style="align-self: end;">HABILIDADES DESTACADAS</h2>
+                <img class="logos" alt="Resolución de problemas" style="width: 10vw;"
+                    src="https://media-public.canva.com/MADoheTQTsg/1/screen.svg">
+                <img class="logos" alt="Análisis de datos" style="width: 10vw;"
+                    src="https://media-public.canva.com/mR_UE/MAFaOymR_UE/1/tl.png">
+                <img class="logos" alt="Orientación a resultados" style="width: 10vw;"
+                    src="https://media-private.canva.com/WSqAc/MAEqLwWSqAc/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20241006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241006T050540Z&X-Amz-Expires=62299&X-Amz-Signature=300f516c11430f0eb87de3d8fc6d55319c444568607d56f51034820215d27a8a&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sun%2C%2006%20Oct%202024%2022%3A23%3A59%20GMT">
+                <p class="descriptionSkills">RESOLUCIÓN DE PROBLEMAS</p>
+                <p class="descriptionSkills">ANÁLISIS DE DATOS</p>
+                <p class="descriptionSkills">ORIENTACIÓN A RESULTADOS</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="ContactAndReview">
+        <div class="reviews">
+            <div class="contactBox">
+                <h1 class="titles">Contacto</h1>
+                <h3>¿Te pareció interesante mi portafolio?<br>
+                    Ponte en contacto conmigo.</h3>
+                <p>Estoy disponible como freelance o a tiempo completo si surge el proyecto adecuado.<br>No dudes en
+                    contactarme.</p>
+                <ul class="contactList">
+                    <img class="imgMail" src="https://media-public.canva.com/YLfto/MAEzLoYLfto/1/tl.png">
+                    <li class="email">casasanahi@hotmail.com</li>
+                    <img class="imgARG" src="https://media-public.canva.com/0YvX8/MAEFpl0YvX8/1/s.svg">
+                    <li class="contactDetails telArg">+54 9 11 3777 8830</li>
+                    <img class="imgES" src="https://media-public.canva.com/Pygos/MAEIE_Pygos/1/s.png">
+                    <li class="contactDetails telEs">+34 665 477 354</li>
+                    <img class="imgSE"
+                        src="https://media-private.canva.com/A3U84/MAEkoJA3U84/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20241007%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241007T053936Z&X-Amz-Expires=67149&X-Amz-Signature=48b365938150e524ec96043fa0186b4d5760d9d4bc78f1d66f7c9da89926ceb6&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Tue%2C%2008%20Oct%202024%2000%3A18%3A45%20GMT">
+                    <li class="contactDetails telSe">+46 760 103 695</li>
+                </ul>
+            </div>
+            <div class="reviewBox">
+                <h1 class="titles">Reseña</h1>
+                <p>Me ayudarias mucho dejando una reseña sobre que te pareció mi pagina web.</p>
+                <form action="" onsubmit="addReview()">
+                    <input type="text" class="fullName" id="fullName" name="fullName" placeholder="Tu nombre" required>
+
+                    <input type="text" class="company" id="company" name="company"
+                        placeholder="Nombre de la empresa que revisó mi portafolio">
+
+                    <input type="text" class="position" id="position" name="position"
+                        placeholder="Posición dentro de la empresa">
+
+                    <textarea class="review" id="reviewPost" placeholder="Escribe aquí tu reseña..."
+                        required></textarea>
+
+                    <button onclick="addReview()" class="sendButton">Enviar reseña</button>
+                    <p id="addedReview"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
