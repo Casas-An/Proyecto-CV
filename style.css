@@ -72,6 +72,22 @@ a {
 	height: fit-content;
 }
 
+.moon {
+	width: 31px; 
+	height: 31px; 
+	cursor: pointer;
+}
+
+.spanishLanguage {
+	width: 30px; 
+	cursor: pointer;
+}
+
+.englishLanguage {
+	width: 30px; 
+	cursor: pointer;
+}
+
 .presentación {
 	display: grid;
 	grid-template-rows: 0.5fr 1fr repeat(2, 0.5fr) 1fr;
@@ -700,42 +716,44 @@ span {
 	}
 
 	#PáginaPrincipal {
-		background-color: #fcecf1;
 		display: flex;
-        background-color: #fcecf1;
         flex-direction: column-reverse;
         justify-content: space-between;
+		height: auto;
+		background: linear-gradient(to bottom, #fcecf1, #ffffff);
 	}
 
 	.contenedorIzquierdo {
-		background-color: initial;
+        align-self: center;
+        background-color: initial;
         height: min-content;
         border-radius: 0;
-        width: 100vw;
+        width: 90vw;
 	}
 
 	#fotoCV {
-		width: 80vw;
+        width: 80vw;
         height: 80vw;
         border-radius: 50%;
         object-fit: cover;
-        margin: 0 0 20% 0;
+        margin: 3% 0 3% 0;
 	}
 
 	.contenedorDerecho {
-		display: flex;
+        display: flex;
         height: auto;
-        width: 100vw;
+        width: 90vw;
         flex-direction: row-reverse;
+        align-self: center;
 	}
 
 	.modeAndLanguage {
         flex-direction: column;
         width: fit-content;
         position: relative;
-        top: -150px;
+        top: -100px;
         align-items: initial;
-        margin: 0 5% 0 0;
+        margin: 0;
 	}
 
 	.englishLanguage {
@@ -743,10 +761,11 @@ span {
 	}
 
 	.presentación {
-        padding: 0;
+		padding: 0;
         align-self: start;
         height: auto;
-        margin: 0 0 0 5%;
+        margin: 0;
+        grid-template-rows: repeat(4, 0.5fr) 1fr;
 	}
 
 	.presentación p {
@@ -759,6 +778,7 @@ span {
 
 	.name {
 		font-size: 45px;
+		margin: 0;
 	}
 
 	.aboutMe {
