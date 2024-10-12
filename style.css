@@ -700,38 +700,42 @@ span {
 	}
 
 	#PáginaPrincipal {
-		display: flex;
-		flex-wrap: wrap-reverse;
 		background-color: #fcecf1;
-		height: 100vh;
+		display: flex;
+        background-color: #fcecf1;
+        flex-direction: column-reverse;
+        justify-content: space-between;
 	}
 
 	.contenedorIzquierdo {
 		background-color: initial;
-		height: min-content;
-		border-radius: 0;
-		width: 100vw;
+        height: min-content;
+        border-radius: 0;
+        width: 100vw;
 	}
 
 	#fotoCV {
-		width: 90vw;
-		height: 90vw;
-		border-radius: 50%;
-		object-fit: cover;
-		margin: 0 0 20% 0;
+		width: 80vw;
+        height: 80vw;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 0 20% 0;
 	}
 
 	.contenedorDerecho {
 		display: flex;
-		height: fit-content;
+        height: auto;
+        width: 100vw;
+        flex-direction: row-reverse;
 	}
 
 	.modeAndLanguage {
-		flex-direction: column;
-		width: fit-content;
-		position: relative;
-		left: 90%;
-		top: -175px;
+        flex-direction: column;
+        width: fit-content;
+        position: relative;
+        top: -150px;
+        align-items: initial;
+        margin: 0 5% 0 0;
 	}
 
 	.englishLanguage {
@@ -739,8 +743,10 @@ span {
 	}
 
 	.presentación {
-		padding: 0;
-		align-self: start;
+        padding: 0;
+        align-self: start;
+        height: auto;
+        margin: 0 0 0 5%;
 	}
 
 	.presentación p {
@@ -765,7 +771,9 @@ span {
 		justify-self: center;
 	}
 
-	.firstBoxes {}
+	.firstBoxes {
+		height: auto;s
+	}
 
 	.titleMin {
 		font-size: 17px;
