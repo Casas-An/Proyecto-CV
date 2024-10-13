@@ -664,7 +664,7 @@ span {
 		flex-direction: column-reverse;
 		justify-content: space-between;
 		height: auto;
-		background: linear-gradient(to bottom, #10101a, #0b0b13);
+		background: linear-gradient(to bottom, #0b0b13, #10101a);
 	}
 
 	.contenedorIzquierdo {
@@ -914,7 +914,7 @@ span {
 		flex-direction: column-reverse;
 		justify-content: space-between;
 		height: auto;
-		background: linear-gradient(to bottom, #10101a, #0b0b13);
+		background: linear-gradient(to bottom, #0b0b13, #10101a);
 	}
 
 	.contenedorIzquierdo {
@@ -1165,7 +1165,7 @@ span {
 		flex-direction: column-reverse;
 		justify-content: space-between;
 		height: auto;
-		background: linear-gradient(to bottom, #10101a, #0b0b13);
+		background: linear-gradient(to bottom, #0b0b13, #10101a);
 	}
 
 	.contenedorIzquierdo {
