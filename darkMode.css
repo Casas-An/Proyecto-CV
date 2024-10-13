@@ -483,6 +483,7 @@ textarea {
 	border: solid #878787;
 	font-family: inherit;
 	background-color: #0b0b13;
+	color: white;
 }
 
 input {
@@ -492,6 +493,7 @@ input {
 	width: 100%;
 	font-family: inherit;
 	background-color: #0b0b13;
+	color: white;
 }
 
 .sendButton {
