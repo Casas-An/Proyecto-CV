@@ -67,11 +67,16 @@ a {
 	justify-content: flex-end;
 	/* eje X */
 	align-items: flex-start;
-	position: sticky;
+	/* position: sticky; */
 	top: 0px;
 	z-index: 999;
 	margin: 20px 0 0 0;
 	height: fit-content;
+	overflow: visible;
+
+	
+    position: fixed;
+    justify-self: end;
 }
 
 .moon {
@@ -97,10 +102,15 @@ a {
 	justify-content: flex-start;
 	/* eje Y porque lo puse como columna entonces se invierte */
 	padding: 0 40% 10% 2%;
-	height: 60%;
+	/* height: 60%; */
 	align-items: flex-start;
 	/* eje X porque lo puse como columna entonces se invierte */
 	word-wrap: break-word;
+	
+    height: auto;
+    position: relative;
+    /* width: 21vw; */
+    top: 48vh;
 }
 
 .presentación p {
@@ -649,6 +659,160 @@ span {
 }
 
 @media only screen and (max-width: 479px) {
+	#PáginaPrincipal {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		height: auto;
+		background: linear-gradient(to bottom, #10101a, #0b0b13);
+	}
+
+	.contenedorIzquierdo {
+		align-self: center;
+		background-color: initial;
+		height: min-content;
+		border-radius: 0;
+		width: 90vw;
+	}
+
+	#fotoCV {
+		width: 80vw;
+		height: 80vw;
+		border-radius: 50%;
+		object-fit: cover;
+		margin: 3% 0 3% 0;
+	}
+
+	.contenedorDerecho {
+		display: flex;
+		height: auto;
+		width: 90vw;
+		flex-direction: row-reverse;
+		align-self: center;
+	}
+
+	.modeAndLanguage {
+		flex-direction: column;
+		width: fit-content;
+		position: fixed;
+        top: 0;
+        right: 1%;
+		align-items: initial;
+		margin: 0;
+	}
+
+	.englishLanguage {
+		margin: 0;
+	}
+
+	.presentación {
+		padding: 0;
+		align-self: start;
+		height: auto;
+		margin: 0;
+		grid-template-rows: repeat(4, 0.5fr) 1fr;
+		top: 0;
+	}
+
+	.presentación p {
+		font-size: 18px !important;
+	}
+
+	.presentación p:last-child {
+		display: inline-block;
+	}
+
+	.name {
+		font-size: 45px;
+		margin: 0;
+	}
+
+	.aboutMe {
+		width: 85vw;
+	}
+
+	#PáginaDesarrollada {
+		height: auto;
+	}
+
+	.edLanSk {
+		width: 80vw;
+		margin: 0;
+		justify-self: center;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		column-gap: 0;
+	}
+
+	.firstBoxes {
+		height: 35px;
+		margin: 5% 0 0 0;
+	}
+
+	.liS {
+		list-style: none;
+	}
+
+	#ProfessionalExperience {
+		height: auto;
+		margin: 5% 0 0 0;
+	}
+
+	.titleMin {
+		font-size: 17px;
+		margin: 3% 0 0 3%;
+	}
+
+	.ol {
+		width: 90vw;
+		margin: 0;
+		padding: 0 0 0 3%;
+	}
+
+	.nameExperience {
+		word-wrap: break-word;
+	}
+
+	.lastJob {
+		margin: 0 0 0 -4%;
+	}
+
+	.tasksList {
+        width: 75vw;
+	}
+
+	#portfolio {
+		overflow: auto;
+        height: auto;
+	}
+
+	.titlePortfolio {
+		margin: 0 0 3% 0;
+        align-content: center;
+	}
+
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+        column-gap: 3%;
+        width: 90vw;
+        margin: 0;
+        justify-self: center;
+	}
+
+	.projectBox {
+		width: max-content;
+        justify-self: center;
+	}
+
+	.imgProjects {
+		width: 20vh;
+	}
+
+	.tooltip {
+		height: 65%;
+	}
+
 	#gridContainer {
 		grid-template-rows: 20% 80%;
 		grid-template-columns: auto;
@@ -662,6 +826,7 @@ span {
 		grid-template-rows: auto;
 		grid-template-columns: repeat(2, 1fr);
 		margin: 0;
+		padding: 0;
 	}
 
 	.socialMedias {
@@ -670,6 +835,9 @@ span {
 
 	.emoji {
 		height: 40.5vw;
+		justify-self: center;
+		position: relative;
+		right: -5%;
 	}
 
 	.socialMediaLogo {
@@ -735,6 +903,12 @@ span {
 		height: auto;
 	}
 
+	.form {
+		gap: 1vh 5vw;;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 	#PáginaPrincipal {
 		display: flex;
 		flex-direction: column-reverse;
@@ -752,8 +926,8 @@ span {
 	}
 
 	#fotoCV {
-		width: 80vw;
-		height: 80vw;
+		width: 60vw;
+		height: 60vw;
 		border-radius: 50%;
 		object-fit: cover;
 		margin: 3% 0 3% 0;
@@ -765,13 +939,15 @@ span {
 		width: 90vw;
 		flex-direction: row-reverse;
 		align-self: center;
+		margin: 3% 0 0 0;
 	}
 
 	.modeAndLanguage {
 		flex-direction: column;
 		width: fit-content;
-		position: relative;
-		top: -100px;
+		position: fixed;
+        top: 0;
+        right: 1%;
 		align-items: initial;
 		margin: 0;
 	}
@@ -786,6 +962,7 @@ span {
 		height: auto;
 		margin: 0;
 		grid-template-rows: repeat(4, 0.5fr) 1fr;
+		top: 0;
 	}
 
 	.presentación p {
@@ -801,16 +978,16 @@ span {
 		margin: 0;
 	}
 
-	.aboutMe {
-		width: 90vw;
-	}
-
 	#PáginaDesarrollada {
 		height: auto;
 	}
 
+	.aboutMe {
+		width: 85vw;
+	}
+
 	.edLanSk {
-		width: 90vw;
+		width: 80vw;
 		margin: 0;
 		justify-self: center;
 		display: flex;
@@ -821,7 +998,7 @@ span {
 
 	.firstBoxes {
 		height: 35px;
-		margin: 5% 0 0 0;
+		margin: 3% 0 0 0;
 	}
 
 	.liS {
@@ -835,7 +1012,7 @@ span {
 
 	.titleMin {
 		font-size: 17px;
-		margin: 3% 0 0 3%;
+		margin: 2% 0 0 2%;
 	}
 
 	.ol {
@@ -852,153 +1029,421 @@ span {
 		margin: 0 0 0 -4%;
 	}
 
+	.tasksList {
+        width: 75vw;
+	}
+
 	#portfolio {
 		overflow: auto;
+        height: auto;
+	}
+
+	.titlePortfolio {
+		margin: 0 0 3% 0;
+        align-content: center;
 	}
 
 	.projects {
-		height: auto;
-		width: 90vw;
-		margin: 0;
-		row-gap: 1vh;
-		grid-template-columns: auto;
-		justify-self: center;
+		grid-template-columns: repeat(2, 1fr);
+        column-gap: 3%;
+        width: 90vw;
+        margin: 0;
+        justify-self: center;
 	}
 
 	.projectBox {
-		width: 70vw;
+		width: max-content;
+        justify-self: center;
 	}
 
 	.imgProjects {
-		width: 45%;
+		width: 21vh;
+	}
+
+	#gridContainer {
+		grid-template-rows: 20% 80%;
+		grid-template-columns: auto;
+		column-gap: 0;
+		justify-content: center;
+		margin: 10% 0 0 0;
+	}
+
+	.leftDivGrid {
+		width: 90vw;
+		grid-template-rows: auto;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0;
+		padding: 0;
+	}
+
+	.socialMedias {
+		grid-template-rows: 35% 65%;
+	}
+
+	.emoji {
+		height: 20vh;
+		position: relative;
+        right: 5vw;
+	}
+
+	.socialMediaLogo {
+		width: fit-content;
+		height: fit-content;
+	}
+
+	.logos {
+		transform: scale(0.6);
+	}
+
+	.rightDivGrid {
+		width: 90vw;
+		gap: 2%;
+		margin: 0;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.topRightDivGrid {
+		grid-template-rows: 20% repeat(3, 26.66666667%);
+		grid-template-columns: repeat(4, 25%);
+		grid-template-areas: "header header header header";
+		width: inherit;
+	}
+
+	.bottomRightDivGrid {
+		grid-template-columns: repeat(3, 33.33333333%);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"header header header"
+			"logos logos logos";
+		width: inherit;
 	}
 
 	.tooltip {
 		height: 65%;
 	}
-}
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	.presentación {
-		padding: 0 15% 10% 2%;
-		height: 70%;
+	#ContactAndReview {
+		height: auto;
+		margin: 10% 0 0 0;
 	}
 
-	.projects {
-		grid-template-columns: repeat(2, 1fr);
-		column-gap: 0;
+	.reviews {
+		display: flex;
+        flex-direction: column;
+        height: auto;
 	}
 
-	.projectBox {
-		width: max-content;
-		justify-self: center;
-	}
-
-	.imgProjects {
-		width: 28vh;
-	}
-
-	.emoji {
-		height: 30vw;
-	}
-
-	.socialMedias {
-		grid-template-rows: 28% 28% 1fr;
-	}
-
-	.rightDivGrid {
-		grid-template-rows: repeat(2, 50%);
-		margin: 30px 30px 30px 0;
-		gap: 0;
-	}
-
-	.topRightDivGrid {
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 25% repeat(3, 25%);
-		grid-template-areas: "header header header header";
-	}
-
-	.bottomRightDivGrid {
-		grid-template-rows: 28% 28% 1fr;
-	}
-
-	.descriptionSkills {
+	.contactBox {
 		margin: 0;
-		margin: 7vh 0 0 0;
-		align-self: start;
+        grid-template-rows: auto;
+        padding: 3%;
 	}
 
-	.header {
-		margin: 0;
-		font-size: 25px;
-		align-self: end;
+	.reviewBox {
+		margin: 3% 0 0 0;
+        grid-template-rows: auto;
+        padding: 3%;
 	}
 
-	.logos {
-		transform: scale(0.9);
-		margin: 5vh 0 0 0;
+	textarea {
+		height: auto;
 	}
+
+	input {
+		height: auto;
+	}
+
+	.form {
+		gap: 1vh 5vw;;
+	}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+	#PáginaPrincipal {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		height: auto;
+		background: linear-gradient(to bottom, #10101a, #0b0b13);
+	}
+
+	.contenedorIzquierdo {
+		align-self: center;
+		background-color: initial;
+		height: min-content;
+		border-radius: 0;
+		width: 90vw;
+	}
+
+	#fotoCV {
+		width: 60vw;
+		height: 60vw;
+		border-radius: 50%;
+		object-fit: cover;
+		margin: 3% 0 3% 0;
+	}
+
+	.contenedorDerecho {
+		display: flex;
+		height: auto;
+		width: 90vw;
+		flex-direction: row-reverse;
+		align-self: center;
+		margin: 3% 0 0 0;
+	}
+
+	.modeAndLanguage {
+		flex-direction: column;
+		width: fit-content;
+		position: fixed;
+        top: 0;
+        right: 1%;
+		align-items: initial;
+		margin: 0;
+	}
+
+	.englishLanguage {
+		margin: 0;
+	}
+
 	.presentación {
-		padding: 0 20% 10% 2%;
-	}
-
-	.emoji {
-		height: 30vw;
-	}
-
-	.socialMedias {
-		grid-template-rows: 28% 28% 1fr;
-	}
-
-	.rightDivGrid {
-		grid-template-rows: repeat(2, 50%);
-		margin: 30px 30px 30px 0;
-		gap: 0;
-	}
-
-	.topRightDivGrid {
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 25% repeat(3, 25%);
-		grid-template-areas: "header header header header";
-	}
-
-	.bottomRightDivGrid {
-		grid-template-rows: 28% 28% 1fr;
-	}
-
-	.descriptionSkills {
-		margin: 0;
-		margin: 7vh 0 0 0;
+		padding: 0;
 		align-self: start;
-	}
-
-	.header {
+		height: auto;
 		margin: 0;
-		font-size: 25px;
-		align-self: end;
+		grid-template-rows: repeat(4, 0.5fr) 1fr;
+		top: 0;
 	}
 
-	.logos {
-		transform: scale(0.9);
-		margin: 5vh 0 0 0;
+	.presentación p {
+		font-size: 18px !important;
+	}
+
+	.presentación p:last-child {
+		display: inline-block;
+	}
+
+	.name {
+		font-size: 45px;
+		margin: 0;
+	}
+
+	#PáginaDesarrollada {
+		height: auto;
+	}
+
+	.aboutMe {
+		width: 90vw;
+	}
+
+	.edLanSk {
+		width: 90vw;
+		margin: 0;
+		justify-self: center;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		column-gap: 0;
+	}
+
+	.firstBoxes {
+		height: 33px;
+		margin: 2% 0 0 0;
+		width: 88vw;
+	}
+
+	.titleMin {
+		font-size: 17px;
+		margin: 1% 0 0 1%;
+	}
+
+	.liS {
+		list-style: none;
+	}
+
+	#ProfessionalExperience {
+		height: auto;
+		margin: 5% 0 0 0;
+	}
+
+	.ol {
+		width: 90vw;
+		margin: 0;
+		padding: 0 0 0 3%;
+	}
+
+	.nameExperience {
+		word-wrap: break-word;
+	}
+
+	.lastJob {
+		margin: 0 0 0 -4%;
+	}
+
+	.tasksList {
+		width: 84vw;
+	}
+
+	#portfolio {
+		overflow: auto;
+        height: auto;
+	}
+
+	.titlePortfolio {
+		margin: 0 0 3% 0;
+        align-content: center;
 	}
 
 	.projects {
 		grid-template-columns: repeat(2, 1fr);
-		column-gap: 0;
+        column-gap: 0;
+        width: 90vw;
+        margin: 0;
+        justify-self: center;
 	}
 
 	.projectBox {
 		width: max-content;
-		justify-self: center;
+        justify-self: center;
 	}
 
 	.imgProjects {
-		width: 28vh;
+		width: 25vh;
+	}
+
+	#gridContainer {
+		grid-template-rows: 20% 80%;
+		grid-template-columns: auto;
+		column-gap: 0;
+		justify-content: center;
+		margin: 10% 0 0 0;
+	}
+
+	.leftDivGrid {
+		width: 90vw;
+		grid-template-rows: auto;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0;
+		padding: 0;
+	}
+
+	.socialMedias {
+		grid-template-rows: 35% 65%;
+	}
+
+	.emoji {
+		height: 21.5vh;
+		position: relative;
+        right: 7vw;
+	}
+
+	.socialMediaLogo {
+		width: fit-content;
+		height: fit-content;
+	}
+
+	.logos {
+		transform: scale(0.6);
+	}
+
+	.rightDivGrid {
+		width: 90vw;
+		gap: 2%;
+		margin: 0;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.topRightDivGrid {
+		grid-template-rows: 20% repeat(3, 26.66666667%);
+		grid-template-columns: repeat(4, 25%);
+		grid-template-areas: "header header header header";
+		width: inherit;
+	}
+
+	.bottomRightDivGrid {
+		grid-template-columns: repeat(3, 33.33333333%);
+		grid-template-rows: auto;
+		grid-template-areas:
+			"header header header"
+			"logos logos logos";
+		width: inherit;
+	}
+
+	.tooltip {
+		height: 65%;
+	}
+
+	#ContactAndReview {
+		height: auto;
+		margin: 10% 0 0 0;
+	}
+
+	.reviews {
+		display: flex;
+        flex-direction: column;
+        height: auto;
+	}
+
+	.contactBox {
+		margin: 0;
+        grid-template-rows: auto;
+        padding: 3%;
+	}
+
+	.reviewBox {
+		margin: 3% 0 0 0;
+        grid-template-rows: auto;
+        padding: 3%;
+	}
+
+	textarea {
+		height: auto;
+	}
+
+	input {
+		height: auto;
+	}
+
+	.form {
+		gap: 1vh 5vw;;
 	}
 }
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+	.modeAndLanguage {
+		right: -1.5%;
+	}
+
+	.tasksList {
+		width: 71vw;
+	}
+	
+	#gridContainer {
+		margin: 0;
+	}
+
+	#ContactAndReview {
+		margin: 0;
+	}
+
+	.topRightDivGrid {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 20% repeat(3, 26.66666667%);
+		grid-template-areas: "header header header header";
+	}
+
+	.logos {
+		transform: scale(0.8);
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#gridContainer {
+		margin: 0;
+	}
+
+	#ContactAndReview {
+		margin: 0;
+	}
+}
