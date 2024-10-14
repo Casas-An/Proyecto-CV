@@ -35,6 +35,20 @@ function toggleMode() {
   }
 }
 
+
+const changeLanguage = async language=>{
+const requestJson = await fetch(`./languages/${language}.json`)
+const texts = await requestJson.json()
+
+console.log(texts);
+}
+
+const flagElements = document.getElementById("Flags");
+
+flagElements.addEventListener("click", (e)=> {
+  changeLanguage(e.target.dataset.language);
+});
+
 // function toggleMode() {
 //   const el = document.querySelector("body")
 //   el.classList.toggle("darkMode");
