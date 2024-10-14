@@ -813,6 +813,7 @@ span {
 
 	.tooltip {
 		height: 65%;
+		width: auto;
 	}
 
 	#gridContainer {
